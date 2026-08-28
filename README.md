@@ -36,7 +36,7 @@ schedule changes are picked up automatically.
 Requires Python 3.9+.
 
 ```bash
-cd /Users/markheadd/Repos/whs-soccer-schedule
+cd /path/to/whs-soccer-schedule
 python3 -m venv .venv
 .venv/bin/python -m pip install -r requirements.txt
 ```
@@ -52,7 +52,7 @@ Run the script to (re)generate the `.ics` file:
 Example output:
 
 ```text
-Wrote 16 games to /Users/markheadd/Repos/whs-soccer-schedule/whs-boys-varsity-soccer.ics
+Wrote 16 games to /path/to/whs-soccer-schedule/whs-boys-varsity-soccer.ics
 Schedule changes since last run:
   ~ Changed: Tue Sep 8 @ Skaneateles Central Schools
       time_text: '6:30 PM' -> '7:00 PM'
@@ -111,7 +111,7 @@ Once Pages is set up, keeping everyone current is a matter of re-running the
 script and pushing the result each week:
 
 ```bash
-cd /Users/markheadd/Repos/whs-soccer-schedule
+cd /path/to/whs-soccer-schedule
 .venv/bin/python update_schedule.py
 git add whs-boys-varsity-soccer.ics docs/whs-boys-varsity-soccer.ics
 git commit -m "chore: update schedule"
@@ -127,14 +127,14 @@ To refresh the schedule automatically (for example, every Monday at 6 AM), add a
 cron entry with `crontab -e`:
 
 ```cron
-0 6 * * 1 cd /Users/markheadd/Repos/whs-soccer-schedule && .venv/bin/python update_schedule.py --quiet >> update.log 2>&1
+0 6 * * 1 cd /path/to/whs-soccer-schedule && .venv/bin/python update_schedule.py --quiet >> update.log 2>&1
 ```
 
 To also publish updates automatically, append the git commands to the cron job
 (this commits and pushes only when the calendar actually changed):
 
 ```cron
-0 6 * * 1 cd /Users/markheadd/Repos/whs-soccer-schedule && .venv/bin/python update_schedule.py --quiet && git add whs-boys-varsity-soccer.ics docs/whs-boys-varsity-soccer.ics && git diff --cached --quiet || git commit -m "chore: update schedule" && git push >> update.log 2>&1
+0 6 * * 1 cd /path/to/whs-soccer-schedule && .venv/bin/python update_schedule.py --quiet && git add whs-boys-varsity-soccer.ics docs/whs-boys-varsity-soccer.ics && git diff --cached --quiet || git commit -m "chore: update schedule" && git push >> update.log 2>&1
 ```
 
 ## Notes
