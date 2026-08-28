@@ -29,6 +29,15 @@
     }
     header h1 { margin: 0 0 0.25rem; font-size: 1.6rem; }
     header p { margin: 0; color: #c7d0e0; }
+    .logo {
+      width: 96px;
+      height: 96px;
+      object-fit: contain;
+      background: #fff;
+      border-radius: 12px;
+      padding: 8px;
+      margin-bottom: 1rem;
+    }
     main {
       max-width: 640px;
       margin: 0 auto;
@@ -66,11 +75,14 @@
       font-size: 0.85rem;
       padding: 1.5rem;
     }
+    footer p { margin: 0.4rem 0; }
+    .disclaimer { font-style: italic; }
     a { color: var(--accent); }
   </style>
 </head>
 <body>
   <header>
+    <img class="logo" src="westhill-logo.jpg" alt="Westhill School District logo" />
     <h1>Westhill Boys Varsity Soccer</h1>
     <p>Season schedule — subscribe or import to your calendar</p>
   </header>
@@ -108,7 +120,16 @@
   </main>
 
   <footer>
-    Schedule sourced from ArbiterLive. Times shown are U.S. Eastern.
+    <p>Schedule sourced from ArbiterLive. Times shown are U.S. Eastern.</p>
+    <p class="disclaimer">
+      This is an unofficial, community-maintained page and is not affiliated with,
+      endorsed by, or operated by Westhill Central School District.
+    </p>
+    <p>
+      <a href="https://github.com/mheadd/whs-soccer-schedule" target="_blank" rel="noopener">
+        Learn more about this project on GitHub
+      </a>
+    </p>
   </footer>
 </body>
 </html>
