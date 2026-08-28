@@ -1,0 +1,152 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//WHS Soccer Schedule//Boys Varsity Soccer 2026//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Westhill Boys Varsity Soccer 2026
+X-WR-TIMEZONE:America/New_York
+BEGIN:VEVENT
+UID:whs-soccer-2026-01@arbiterlive
+DTSTAMP:20260828T000000Z
+DTSTART:20260831T210000Z
+DTEND:20260831T230000Z
+SUMMARY:Soccer: Westhill vs Liverpool (Home)
+LOCATION:Westhill High School Stadium
+DESCRIPTION:Boys Varsity Soccer. Home game vs Liverpool High School.
+END:VEVENT
+BEGIN:VEVENT
+UID:whs-soccer-2026-02@arbiterlive
+DTSTAMP:20260828T000000Z
+DTSTART:20260902T220000Z
+DTEND:20260903T000000Z
+SUMMARY:Soccer: Westhill vs Whitesboro (Home)
+LOCATION:Westhill High School Stadium
+DESCRIPTION:Boys Varsity Soccer. Home game vs Whitesboro High School.
+END:VEVENT
+BEGIN:VEVENT
+UID:whs-soccer-2026-03@arbiterlive
+DTSTAMP:20260828T000000Z
+DTSTART:20260903T220000Z
+DTEND:20260904T000000Z
+SUMMARY:Soccer: Westhill @ Oneida (Away)
+LOCATION:Oneida Varsity Field
+DESCRIPTION:Boys Varsity Soccer. Away game vs Oneida City School District.
+END:VEVENT
+BEGIN:VEVENT
+UID:whs-soccer-2026-04@arbiterlive
+DTSTAMP:20260828T000000Z
+DTSTART:20260905T160000Z
+DTEND:20260905T180000Z
+SUMMARY:Soccer: Westhill vs East Syracuse Minoa (Home)
+LOCATION:Westhill High School Stadium
+DESCRIPTION:Boys Varsity Soccer. Home game vs East Syracuse Minoa High School.
+END:VEVENT
+BEGIN:VEVENT
+UID:whs-soccer-2026-05@arbiterlive
+DTSTAMP:20260828T000000Z
+DTSTART:20260908T223000Z
+DTEND:20260909T003000Z
+SUMMARY:Soccer: Westhill @ Skaneateles (Away)
+LOCATION:Arthur Hyatt Stadium, Skaneateles
+DESCRIPTION:Boys Varsity Soccer. Away game vs Skaneateles Central Schools.
+END:VEVENT
+BEGIN:VEVENT
+UID:whs-soccer-2026-06@arbiterlive
+DTSTAMP:20260828T000000Z
+DTSTART:20260911T203000Z
+DTEND:20260911T223000Z
+SUMMARY:Soccer: Westhill @ New Hartford (Away)
+LOCATION:New Hartford Senior High School - Sr. High Turf Field
+DESCRIPTION:Boys Varsity Soccer. Away game vs New Hartford High School.
+END:VEVENT
+BEGIN:VEVENT
+UID:whs-soccer-2026-07@arbiterlive
+DTSTAMP:20260828T000000Z
+DTSTART:20260915T230000Z
+DTEND:20260916T010000Z
+SUMMARY:Soccer: Westhill vs Cazenovia (Home)
+LOCATION:Westhill High School
+DESCRIPTION:Boys Varsity Soccer. Home game vs Cazenovia High School.
+END:VEVENT
+BEGIN:VEVENT
+UID:whs-soccer-2026-08@arbiterlive
+DTSTAMP:20260828T000000Z
+DTSTART:20260917T210000Z
+DTEND:20260917T230000Z
+SUMMARY:Soccer: Westhill @ Jamesville-DeWitt (Away)
+LOCATION:Jamesville-DeWitt High School - HS Stadium
+DESCRIPTION:Boys Varsity Soccer. Away game vs Jamesville DeWitt High School.
+END:VEVENT
+BEGIN:VEVENT
+UID:whs-soccer-2026-09@arbiterlive
+DTSTAMP:20260828T000000Z
+DTSTART:20260919T180000Z
+DTEND:20260919T200000Z
+SUMMARY:Soccer: Westhill @ Christian Brothers Academy (Away)
+LOCATION:Alibrandi Stadium, Syracuse
+DESCRIPTION:Boys Varsity Soccer. Away game vs Christian Brothers Academy-Syracuse.
+END:VEVENT
+BEGIN:VEVENT
+UID:whs-soccer-2026-10@arbiterlive
+DTSTAMP:20260828T000000Z
+DTSTART:20260922T230000Z
+DTEND:20260923T010000Z
+SUMMARY:Soccer: Westhill @ Bishop Ludden (Away)
+LOCATION:Bishop Ludden High School
+DESCRIPTION:Boys Varsity Soccer. Away game vs Bishop Ludden-Grimes High School.
+END:VEVENT
+BEGIN:VEVENT
+UID:whs-soccer-2026-11@arbiterlive
+DTSTAMP:20260828T000000Z
+DTSTART:20260926T180000Z
+DTEND:20260926T200000Z
+SUMMARY:Soccer: Westhill vs Bishop Ludden (Home)
+LOCATION:Westhill High School Stadium
+DESCRIPTION:Boys Varsity Soccer. Home game vs Bishop Ludden-Grimes High School.
+END:VEVENT
+BEGIN:VEVENT
+UID:whs-soccer-2026-12@arbiterlive
+DTSTAMP:20260828T000000Z
+DTSTART:20260929T223000Z
+DTEND:20260930T003000Z
+SUMMARY:Soccer: Westhill vs Skaneateles (Home)
+LOCATION:Westhill High School
+DESCRIPTION:Boys Varsity Soccer. Home game vs Skaneateles Central Schools.
+END:VEVENT
+BEGIN:VEVENT
+UID:whs-soccer-2026-13@arbiterlive
+DTSTAMP:20260828T000000Z
+DTSTART:20261006T220000Z
+DTEND:20261007T000000Z
+SUMMARY:Soccer: Westhill @ Cazenovia (Away)
+LOCATION:Fenner Athletic Field - Fenner Field #1
+DESCRIPTION:Boys Varsity Soccer. Away game vs Cazenovia High School.
+END:VEVENT
+BEGIN:VEVENT
+UID:whs-soccer-2026-14@arbiterlive
+DTSTAMP:20260828T000000Z
+DTSTART:20261008T220000Z
+DTEND:20261009T000000Z
+SUMMARY:Soccer: Westhill vs Jamesville-DeWitt (Home)
+LOCATION:Westhill High School
+DESCRIPTION:Boys Varsity Soccer. Home game vs Jamesville DeWitt High School.
+END:VEVENT
+BEGIN:VEVENT
+UID:whs-soccer-2026-15@arbiterlive
+DTSTAMP:20260828T000000Z
+DTSTART:20261013T223000Z
+DTEND:20261014T003000Z
+SUMMARY:Soccer: Westhill vs Christian Brothers Academy (Home)
+LOCATION:Westhill High School
+DESCRIPTION:Boys Varsity Soccer. Home game vs Christian Brothers Academy-Syracuse.
+END:VEVENT
+BEGIN:VEVENT
+UID:whs-soccer-2026-16@arbiterlive
+DTSTAMP:20260828T000000Z
+DTSTART:20261015T223000Z
+DTEND:20261016T003000Z
+SUMMARY:Soccer: Westhill vs Marcellus (Home)
+LOCATION:Westhill High School
+DESCRIPTION:Boys Varsity Soccer. Home game vs Marcellus Central High School.
+END:VEVENT
+END:VCALENDAR

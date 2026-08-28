@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Westhill Boys Varsity Soccer Schedule</title>
+  <style>
+    :root {
+      --navy: #1b2a4a;
+      --accent: #0b6e4f;
+      --bg: #f5f6f8;
+      --card: #ffffff;
+      --text: #222;
+      --muted: #5a6472;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    header {
+      background: var(--navy);
+      color: #fff;
+      padding: 2.5rem 1.25rem;
+      text-align: center;
+    }
+    header h1 { margin: 0 0 0.25rem; font-size: 1.6rem; }
+    header p { margin: 0; color: #c7d0e0; }
+    main {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 1.5rem 1.25rem 3rem;
+    }
+    .card {
+      background: var(--card);
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-top: 1.5rem;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    }
+    .card h2 { margin-top: 0; font-size: 1.15rem; }
+    .btn {
+      display: inline-block;
+      background: var(--accent);
+      color: #fff;
+      text-decoration: none;
+      padding: 0.75rem 1.4rem;
+      border-radius: 8px;
+      font-weight: 600;
+      margin-top: 0.5rem;
+    }
+    .btn:hover { background: #095b41; }
+    ol { padding-left: 1.25rem; }
+    code {
+      background: #eef0f3;
+      padding: 0.15rem 0.4rem;
+      border-radius: 4px;
+      font-size: 0.9em;
+    }
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.85rem;
+      padding: 1.5rem;
+    }
+    a { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Westhill Boys Varsity Soccer</h1>
+    <p>Season schedule — subscribe or import to your calendar</p>
+  </header>
+
+  <main>
+    <div class="card">
+      <h2>Add to your calendar</h2>
+      <p>Download the latest schedule as an <code>.ics</code> file:</p>
+      <a class="btn" href="whs-boys-varsity-soccer.ics" download>Download calendar (.ics)</a>
+    </div>
+
+    <div class="card">
+      <h2>Subscribe (auto-updating)</h2>
+      <p>
+        To have your calendar refresh automatically as games change, subscribe to
+        the file's URL instead of importing it.
+      </p>
+      <p><strong>Google Calendar:</strong></p>
+      <ol>
+        <li>Open <a href="https://calendar.google.com" target="_blank" rel="noopener">Google Calendar</a>.</li>
+        <li>Next to <em>Other calendars</em>, click <strong>+</strong> → <strong>From URL</strong>.</li>
+        <li>Paste this page's <code>.ics</code> URL and click <strong>Add calendar</strong>.</li>
+      </ol>
+      <p><strong>Apple Calendar:</strong> File → New Calendar Subscription, then paste the same URL.</p>
+    </div>
+
+    <div class="card">
+      <h2>One-time import</h2>
+      <ol>
+        <li>Download the <code>.ics</code> file above.</li>
+        <li>In Google Calendar, go to <strong>Settings → Import &amp; export</strong>.</li>
+        <li>Select the file, choose a calendar, and click <strong>Import</strong>.</li>
+      </ol>
+    </div>
+  </main>
+
+  <footer>
+    Schedule sourced from ArbiterLive. Times shown are U.S. Eastern.
+  </footer>
+</body>
+</html>
