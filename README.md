@@ -1,10 +1,24 @@
-# WHS Soccer Schedule → Google Calendar
+# WHS Soccer Schedules → Google Calendar
 
-Fetches the Westhill High School Boys Varsity Soccer schedule from
-[ArbiterLive](https://www.arbiterlive.com/Teams/Schedule/5046751?activeEntityId=25499)
-and exports it to an `.ics` calendar file you can import into Google Calendar
-(or any calendar app). It's designed to be re-run throughout the season so
-schedule changes are picked up automatically.
+Fetches the Westhill High School soccer schedules from
+[ArbiterLive](https://www.arbiterlive.com/) and exports each team to its own
+`.ics` calendar file you can import into Google Calendar (or any calendar app).
+It's designed to be re-run throughout the season so schedule changes are picked
+up automatically.
+
+Teams covered:
+
+| Team | Calendar file |
+|------|---------------|
+| Boys Varsity | `docs/whs-boys-varsity-soccer.ics` |
+| Boys JV | `docs/whs-boys-jv-soccer.ics` |
+| Boys 7th & 8th Grade | `docs/whs-boys-7-8-soccer.ics` |
+| Girls Varsity | `docs/whs-girls-varsity-soccer.ics` |
+| Girls JV | `docs/whs-girls-jv-soccer.ics` |
+| Girls 7th & 8th Grade | `docs/whs-girls-7-8-soccer.ics` |
+
+Team definitions (names, URLs, filenames) live in the `TEAMS` list at the top of
+`update_schedule.py`.
 
 ## How it works
 
@@ -17,18 +31,19 @@ schedule changes are picked up automatically.
   `zoneinfo`, so daylight saving time is handled correctly.
 - The year is inferred from the weekday labels shown on the page and rolls over
   correctly if a season spans from December into January.
-- A snapshot of the last run is saved to `.schedule-snapshot.json`, and each run
-  prints a summary of any games that were added, removed, or changed.
+- A snapshot of the last run is saved to `.schedule-snapshot.json` (keyed by
+  team), and each run prints a per-team summary of any games that were added,
+  removed, or changed.
 
 ## Files
 
 | File | Purpose |
 |:------|:---------|
-| `update_schedule.py` | The scraper / `.ics` generator. |
+| `update_schedule.py` | The scraper / `.ics` generator (teams defined in `TEAMS`). |
 | `requirements.txt` | Python dependencies. |
-| `whs-boys-varsity-soccer.ics` | Generated calendar file (import this). |
 | `docs/index.html` | Landing page served via GitHub Pages. |
-| `docs/whs-boys-varsity-soccer.ics` | Copy of the calendar served via GitHub Pages. |
+| `docs/whs-*-soccer.ics` | Generated calendar files (one per team). |
+| `docs/westhill-logo.jpg` | Logo used on the landing page. |
 | `.schedule-snapshot.json` | Change-tracking state (auto-generated, git-ignored). |
 
 ## Setup
@@ -43,17 +58,23 @@ python3 -m venv .venv
 
 ## Usage
 
-Run the script to (re)generate the `.ics` file:
+Run the script to (re)generate every team's `.ics` file into `docs/`:
 
 ```bash
 .venv/bin/python update_schedule.py
 ```
 
+Generate a single team (repeat `--team` for more than one):
+
+```bash
+.venv/bin/python update_schedule.py --team boys-varsity --team girls-varsity
+```
+
 Example output:
 
 ```text
-Wrote 16 games to /path/to/whs-soccer-schedule/whs-boys-varsity-soccer.ics
-Schedule changes since last run:
+[boys-varsity] Wrote 16 games to docs/whs-boys-varsity-soccer.ics
+[boys-varsity] Schedule changes since last run:
   ~ Changed: Tue Sep 8 @ Skaneateles Central Schools
       time_text: '6:30 PM' -> '7:00 PM'
 ```
@@ -62,20 +83,19 @@ Schedule changes since last run:
 
 | Flag | Description |
 |------|-------------|
-| `--url <URL>` | Use a different schedule page (e.g. another team or season). |
-| `--ics <PATH>` | Write the calendar to a different location. |
-| `--docs-ics <PATH>` | Where to copy the calendar for GitHub Pages (`none` to skip). |
+| `--team <SLUG>` | Limit to specific team(s). Repeatable. Default: all teams. |
+| `--docs-dir <PATH>` | Directory for the generated `.ics` files (default: `docs/`). |
 | `--snapshot <PATH>` | Use a different change-tracking file. |
 | `--quiet` | Suppress the change summary (useful for cron). |
 
-Each run also copies the calendar to `docs/whs-boys-varsity-soccer.ics` so it can
-be served via GitHub Pages (see below).
+Valid team slugs: `boys-varsity`, `boys-jv`, `boys-7-8`, `girls-varsity`,
+`girls-jv`, `girls-7-8`.
 
 ## Importing into Google Calendar
 
 1. Go to [calendar.google.com](https://calendar.google.com) → gear icon → **Settings**.
 2. In the left sidebar, choose **Import & export**.
-3. Under **Import**, select `whs-boys-varsity-soccer.ics`.
+3. Under **Import**, select the team's `.ics` file from `docs/`.
 4. Pick the calendar to add the events to, then click **Import**.
 
 Because events use stable IDs, you can re-import the updated file after any run
@@ -88,7 +108,7 @@ and Google Calendar will update the matching events in place.
 ## Hosting with GitHub Pages
 
 The `docs/` folder is set up to be served by GitHub Pages, giving you a public
-landing page and a stable URL for the `.ics` file that calendar apps can
+landing page and stable URLs for the `.ics` files that calendar apps can
 subscribe to.
 
 **One-time setup:**
@@ -98,12 +118,13 @@ subscribe to.
 3. Under **Build and deployment**, set **Source** to *Deploy from a branch*,
    choose your default branch (e.g. `main`) and the **`/docs`** folder, then
    **Save**.
-4. After a minute, your page is live at
-   `https://<username>.github.io/<repository>/`, and the calendar is at
-   `https://<username>.github.io/<repository>/whs-boys-varsity-soccer.ics`.
+4. After a minute, your landing page is live at
+   `https://<username>.github.io/<repository>/`, and each calendar is at
+   `https://<username>.github.io/<repository>/<team-file>.ics`
+   (e.g. `.../whs-girls-varsity-soccer.ics`).
 
-Give that `.ics` URL to anyone who wants to subscribe. Because the events use
-stable IDs, subscribers' calendars update automatically as the schedule changes.
+Share the landing page and let people pick their team. Because the events use
+stable IDs, subscribers' calendars update automatically as schedules change.
 
 ## Weekly update workflow
 
@@ -113,17 +134,17 @@ script and pushing the result each week:
 ```bash
 cd /path/to/whs-soccer-schedule
 .venv/bin/python update_schedule.py
-git add whs-boys-varsity-soccer.ics docs/whs-boys-varsity-soccer.ics
-git commit -m "chore: update schedule"
+git add docs/*.ics
+git commit -m "chore: update schedules"
 git push
 ```
 
-The script prints a summary of any games that changed, so you can see what was
-updated before pushing.
+The script prints a per-team summary of any games that changed, so you can see
+what was updated before pushing.
 
 ## Running periodically
 
-To refresh the schedule automatically (for example, every Monday at 6 AM), add a
+To refresh the schedules automatically (for example, every Monday at 6 AM), add a
 cron entry with `crontab -e`:
 
 ```cron
@@ -131,10 +152,10 @@ cron entry with `crontab -e`:
 ```
 
 To also publish updates automatically, append the git commands to the cron job
-(this commits and pushes only when the calendar actually changed):
+(this commits and pushes only when a calendar actually changed):
 
 ```cron
-0 6 * * 1 cd /path/to/whs-soccer-schedule && .venv/bin/python update_schedule.py --quiet && git add whs-boys-varsity-soccer.ics docs/whs-boys-varsity-soccer.ics && git diff --cached --quiet || git commit -m "chore: update schedule" && git push >> update.log 2>&1
+0 6 * * 1 cd /path/to/whs-soccer-schedule && .venv/bin/python update_schedule.py --quiet && git add docs/*.ics && git diff --cached --quiet || git commit -m "chore: update schedules" && git push >> update.log 2>&1
 ```
 
 ## Notes

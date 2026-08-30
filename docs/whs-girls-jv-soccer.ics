@@ -1,0 +1,183 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//WHS Soccer Schedule//update_schedule.py//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Westhill Girls JV Soccer
+X-WR-TIMEZONE:America/New_York
+BEGIN:VEVENT
+UID:arbiterlive-game-103575525@arbiterlive.com
+DTSTAMP:20260830T154154Z
+DTSTART:20260901T210000Z
+DTEND:20260901T230000Z
+SUMMARY:Girls JV Soccer: Westhill @ East Syracuse Minoa High School (Away)
+LOCATION:ESM Central High School CHS Upper Grass Field #2
+DESCRIPTION:Girls JV Soccer. Away game vs East Syracuse Minoa High School. 
+ Type: Scrimmage.
+END:VEVENT
+BEGIN:VEVENT
+UID:arbiterlive-game-100191859@arbiterlive.com
+DTSTAMP:20260830T154154Z
+DTSTART:20260908T203000Z
+DTEND:20260908T223000Z
+SUMMARY:Girls JV Soccer: Westhill vs Citizenship and Science Academy of Syr
+ acuse (Home)
+LOCATION:Westhill High School Stadium
+DESCRIPTION:Girls JV Soccer. Home game vs Citizenship and Science Academy o
+ f Syracuse. Type: League.
+END:VEVENT
+BEGIN:VEVENT
+UID:arbiterlive-game-100180785@arbiterlive.com
+DTSTAMP:20260830T154154Z
+DTSTART:20260910T210000Z
+DTEND:20260910T230000Z
+SUMMARY:Girls JV Soccer: Westhill @ Skaneateles Central Schools (Away)
+LOCATION:Skaneateles Central Schools Winkelman Field (Upper Waterman)
+DESCRIPTION:Girls JV Soccer. Away game vs Skaneateles Central Schools. Type
+ : League.
+END:VEVENT
+BEGIN:VEVENT
+UID:arbiterlive-game-103015332@arbiterlive.com
+DTSTAMP:20260830T154154Z
+DTSTART:20260912T150000Z
+DTEND:20260912T170000Z
+SUMMARY:Girls JV Soccer: Westhill vs Lowville Academy (Home)
+LOCATION:Westhill High School Stadium
+DESCRIPTION:Girls JV Soccer. Home game vs Lowville Academy. Type: Non-Leagu
+ e.
+END:VEVENT
+BEGIN:VEVENT
+UID:arbiterlive-game-100191925@arbiterlive.com
+DTSTAMP:20260830T154154Z
+DTSTART:20260914T203000Z
+DTEND:20260914T223000Z
+SUMMARY:Girls JV Soccer: Westhill vs Cazenovia High School (Home)
+LOCATION:Westhill High School Stadium
+DESCRIPTION:Girls JV Soccer. Home game vs Cazenovia High School. Type: Leag
+ ue.
+END:VEVENT
+BEGIN:VEVENT
+UID:arbiterlive-game-100180843@arbiterlive.com
+DTSTAMP:20260830T154154Z
+DTSTART:20260918T210000Z
+DTEND:20260918T230000Z
+SUMMARY:Girls JV Soccer: Westhill @ Mexico Central High School (Away)
+LOCATION:Mexico  Middle School- Mexico MS-#6-Varsity Soccer
+DESCRIPTION:Girls JV Soccer. Away game vs Mexico Central High School. Type:
+  League.
+END:VEVENT
+BEGIN:VEVENT
+UID:arbiterlive-game-100950170@arbiterlive.com
+DTSTAMP:20260830T154154Z
+DTSTART:20260919T130000Z
+DTEND:20260919T150000Z
+SUMMARY:Girls JV Soccer: Westhill @ Christian Brothers Academy-Syracuse (Aw
+ ay)
+LOCATION:Christian Brothers Academy-Syracuse Lower Field
+DESCRIPTION:Girls JV Soccer. Away game vs Christian Brothers Academy-Syracu
+ se. Type: League.
+END:VEVENT
+BEGIN:VEVENT
+UID:arbiterlive-game-100192083@arbiterlive.com
+DTSTAMP:20260830T154154Z
+DTSTART:20260922T210000Z
+DTEND:20260922T230000Z
+SUMMARY:Girls JV Soccer: Westhill vs Phoenix Central School District (Home)
+LOCATION:Westhill High School Stadium
+DESCRIPTION:Girls JV Soccer. Home game vs Phoenix Central School District. 
+ Type: League.
+END:VEVENT
+BEGIN:VEVENT
+UID:arbiterlive-game-100182032@arbiterlive.com
+DTSTAMP:20260830T154154Z
+DTSTART:20260923T203000Z
+DTEND:20260923T223000Z
+SUMMARY:Girls JV Soccer: Westhill @ SCSD Girls JV Soccer West (Away)
+LOCATION:Corcoran High School Grass Field
+DESCRIPTION:Girls JV Soccer. Away game vs SCSD Girls JV Soccer West. Type: 
+ League.
+END:VEVENT
+BEGIN:VEVENT
+UID:arbiterlive-game-100276301@arbiterlive.com
+DTSTAMP:20260830T154154Z
+DTSTART:20260926T140000Z
+DTEND:20260926T160000Z
+SUMMARY:Girls JV Soccer: Westhill vs Marcellus Central High School (Home)
+LOCATION:Westhill High School Stadium
+DESCRIPTION:Girls JV Soccer. Home game vs Marcellus Central High School. Ty
+ pe: League.
+END:VEVENT
+BEGIN:VEVENT
+UID:arbiterlive-game-100192119@arbiterlive.com
+DTSTAMP:20260830T154154Z
+DTSTART:20260928T203000Z
+DTEND:20260928T223000Z
+SUMMARY:Girls JV Soccer: Westhill vs Chittenango Central High School (Home)
+LOCATION:Westhill High School Stadium
+DESCRIPTION:Girls JV Soccer. Home game vs Chittenango Central High School. 
+ Type: League.
+END:VEVENT
+BEGIN:VEVENT
+UID:arbiterlive-game-100249159@arbiterlive.com
+DTSTAMP:20260830T154154Z
+DTSTART:20261001T210000Z
+DTEND:20261001T230000Z
+SUMMARY:Girls JV Soccer: Westhill @ Marcellus Central High School (Away)
+LOCATION:Marcellus Senior High School SHS Stadium Turf Field
+DESCRIPTION:Girls JV Soccer. Away game vs Marcellus Central High School. Ty
+ pe: League.
+END:VEVENT
+BEGIN:VEVENT
+UID:arbiterlive-game-100206337@arbiterlive.com
+DTSTAMP:20260830T154154Z
+DTSTART:20261003T170000Z
+DTEND:20261003T190000Z
+SUMMARY:Girls JV Soccer: Westhill vs Skaneateles Central Schools (Home)
+LOCATION:Westhill High School Stadium
+DESCRIPTION:Girls JV Soccer. Home game vs Skaneateles Central Schools. Type
+ : Non-League.
+END:VEVENT
+BEGIN:VEVENT
+UID:arbiterlive-game-100192265@arbiterlive.com
+DTSTAMP:20260830T154154Z
+DTSTART:20261006T203000Z
+DTEND:20261006T223000Z
+SUMMARY:Girls JV Soccer: Westhill vs Christian Brothers Academy-Syracuse (H
+ ome)
+LOCATION:Westhill High School Stadium
+DESCRIPTION:Girls JV Soccer. Home game vs Christian Brothers Academy-Syracu
+ se. Type: League.
+END:VEVENT
+BEGIN:VEVENT
+UID:arbiterlive-game-100253086@arbiterlive.com
+DTSTAMP:20260830T154154Z
+DTSTART:20261008T210000Z
+DTEND:20261008T230000Z
+SUMMARY:Girls JV Soccer: Westhill @ Jamesville DeWitt High School (Away)
+LOCATION:Jamesville DeWitt High School HS Stadium
+DESCRIPTION:Girls JV Soccer. Away game vs Jamesville DeWitt High School. Ty
+ pe: League.
+END:VEVENT
+BEGIN:VEVENT
+UID:arbiterlive-game-100161915@arbiterlive.com
+DTSTAMP:20260830T154154Z
+DTSTART:20261010T140000Z
+DTEND:20261010T160000Z
+SUMMARY:Girls JV Soccer: Westhill vs Fayetteville-Manlius High School (Home
+ )
+LOCATION:Westhill High School Stadium
+DESCRIPTION:Girls JV Soccer. Home game vs Fayetteville-Manlius High School.
+  Type: Non-League.
+END:VEVENT
+BEGIN:VEVENT
+UID:arbiterlive-game-100192277@arbiterlive.com
+DTSTAMP:20260830T154154Z
+DTSTART:20261014T203000Z
+DTEND:20261014T223000Z
+SUMMARY:Girls JV Soccer: Westhill vs Fabius-Pompey Middle/High School (Home
+ )
+LOCATION:Westhill High School Stadium
+DESCRIPTION:Girls JV Soccer. Home game vs Fabius-Pompey Middle/High School.
+  Type: League.
+END:VEVENT
+END:VCALENDAR

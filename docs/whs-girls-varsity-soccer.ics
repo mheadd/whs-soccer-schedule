@@ -1,0 +1,212 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//WHS Soccer Schedule//update_schedule.py//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Westhill Girls Varsity Soccer
+X-WR-TIMEZONE:America/New_York
+BEGIN:VEVENT
+UID:arbiterlive-game-102881787@arbiterlive.com
+DTSTAMP:20260830T154150Z
+DTSTART:20260831T200000Z
+DTEND:20260831T220000Z
+SUMMARY:Girls Varsity Soccer: Westhill @ Bishop Ludden-GrimesHigh School (A
+ way)
+LOCATION:Bishop Ludden HS Stadium
+DESCRIPTION:Girls Varsity Soccer. Away game vs Bishop Ludden-GrimesHigh Sch
+ ool. Type: Scrimmage.
+END:VEVENT
+BEGIN:VEVENT
+UID:arbiterlive-game-102861022@arbiterlive.com
+DTSTAMP:20260830T154150Z
+DTSTART:20260902T190000Z
+DTEND:20260902T210000Z
+SUMMARY:Girls Varsity Soccer: Westhill vs East Syracuse Minoa High School (
+ Home)
+LOCATION:Onondaga Hill Middle School Onondaga Hill Middle School Soccer Fie
+ ld
+DESCRIPTION:Girls Varsity Soccer. Home game vs East Syracuse Minoa High Sch
+ ool. Type: Scrimmage.
+END:VEVENT
+BEGIN:VEVENT
+UID:arbiterlive-game-101620561@arbiterlive.com
+DTSTAMP:20260830T154150Z
+DTSTART:20260905T141500Z
+DTEND:20260905T161500Z
+SUMMARY:Girls Varsity Soccer: Westhill vs Oneonta High School (Home)
+LOCATION:WFD HS  upper field by parking lot
+DESCRIPTION:Girls Varsity Soccer. Home game vs Oneonta High School. Type: L
+ eague.
+END:VEVENT
+BEGIN:VEVENT
+UID:arbiterlive-game-56422907@arbiterlive.com
+DTSTAMP:20260830T154150Z
+DTSTART:20260906T140000Z
+DTEND:20260906T160000Z
+SUMMARY:Girls Varsity Soccer: Westhill @ Bronxville High School - 1 (Away)
+LOCATION:Niskayuna HS - South on left as you drive in schoo
+DESCRIPTION:Girls Varsity Soccer. Away game vs Bronxville High School - 1. 
+ Type: League.
+END:VEVENT
+BEGIN:VEVENT
+UID:arbiterlive-game-100201956@arbiterlive.com
+DTSTAMP:20260830T154150Z
+DTSTART:20260906T161500Z
+DTEND:20260906T181500Z
+SUMMARY:Girls Varsity Soccer: Westhill @ Bronxville High School - 1 (Away)
+LOCATION:Niskayuna High School Grass Field 1
+DESCRIPTION:Girls Varsity Soccer. Away game vs Bronxville High School - 1. 
+ Type: Non-League.
+END:VEVENT
+BEGIN:VEVENT
+UID:arbiterlive-game-100179978@arbiterlive.com
+DTSTAMP:20260830T154150Z
+DTSTART:20260908T210000Z
+DTEND:20260908T230000Z
+SUMMARY:Girls Varsity Soccer: Westhill @ Chittenango Central High School (A
+ way)
+LOCATION:Chittenango Central High School Chittenango HS- Stadium
+DESCRIPTION:Girls Varsity Soccer. Away game vs Chittenango Central High Sch
+ ool. Type: League.
+END:VEVENT
+BEGIN:VEVENT
+UID:arbiterlive-game-100179139@arbiterlive.com
+DTSTAMP:20260830T154150Z
+DTSTART:20260910T220000Z
+DTEND:20260911T000000Z
+SUMMARY:Girls Varsity Soccer: Westhill vs Marcellus Central High School (Ho
+ me)
+LOCATION:Westhill High School Stadium
+DESCRIPTION:Girls Varsity Soccer. Home game vs Marcellus Central High Schoo
+ l. Type: League.
+END:VEVENT
+BEGIN:VEVENT
+UID:arbiterlive-game-100164449@arbiterlive.com
+DTSTAMP:20260830T154150Z
+DTSTART:20260912T160000Z
+DTEND:20260912T180000Z
+SUMMARY:Girls Varsity Soccer: Westhill vs Lowville Academy (Home)
+LOCATION:Westhill High School Stadium
+DESCRIPTION:Girls Varsity Soccer. Home game vs Lowville Academy. Type: Non-
+ League.
+END:VEVENT
+BEGIN:VEVENT
+UID:arbiterlive-game-100179300@arbiterlive.com
+DTSTAMP:20260830T154150Z
+DTSTART:20260917T220000Z
+DTEND:20260918T000000Z
+SUMMARY:Girls Varsity Soccer: Westhill vs Jamesville DeWitt High School (Ho
+ me)
+LOCATION:Westhill High School Stadium
+DESCRIPTION:Girls Varsity Soccer. Home game vs Jamesville DeWitt High Schoo
+ l. Type: League.
+END:VEVENT
+BEGIN:VEVENT
+UID:arbiterlive-game-100738095@arbiterlive.com
+DTSTAMP:20260830T154150Z
+DTSTART:20260919T160000Z
+DTEND:20260919T180000Z
+SUMMARY:Girls Varsity Soccer: Westhill @ Christian Brothers Academy-Syracus
+ e (Away)
+LOCATION:Christian Brothers Academy-Syracuse Alibrandi Stadium
+DESCRIPTION:Girls Varsity Soccer. Away game vs Christian Brothers Academy-S
+ yracuse. Type: League.
+END:VEVENT
+BEGIN:VEVENT
+UID:arbiterlive-game-100191736@arbiterlive.com
+DTSTAMP:20260830T154150Z
+DTSTART:20260923T210000Z
+DTEND:20260923T230000Z
+SUMMARY:Girls Varsity Soccer: Westhill vs Tully Jr/Sr High School (Home)
+LOCATION:Westhill High School Stadium
+DESCRIPTION:Girls Varsity Soccer. Home game vs Tully Jr/Sr High School. Typ
+ e: League.
+END:VEVENT
+BEGIN:VEVENT
+UID:arbiterlive-game-100484254@arbiterlive.com
+DTSTAMP:20260830T154150Z
+DTSTART:20260926T140000Z
+DTEND:20260926T160000Z
+SUMMARY:Girls Varsity Soccer: Westhill @ Phoenix Central School District (A
+ way)
+LOCATION:Phoenix/ JCB High School JCB Turf Stadium
+DESCRIPTION:Girls Varsity Soccer. Away game vs Phoenix Central School Distr
+ ict. Type: League.
+END:VEVENT
+BEGIN:VEVENT
+UID:arbiterlive-game-100191755@arbiterlive.com
+DTSTAMP:20260830T154150Z
+DTSTART:20260928T223000Z
+DTEND:20260929T003000Z
+SUMMARY:Girls Varsity Soccer: Westhill vs Chittenango Central High School (
+ Home)
+LOCATION:Westhill High School Stadium
+DESCRIPTION:Girls Varsity Soccer. Home game vs Chittenango Central High Sch
+ ool. Type: League.
+END:VEVENT
+BEGIN:VEVENT
+UID:arbiterlive-game-100247618@arbiterlive.com
+DTSTAMP:20260830T154150Z
+DTSTART:20261001T230000Z
+DTEND:20261002T010000Z
+SUMMARY:Girls Varsity Soccer: Westhill @ Marcellus Central High School (Awa
+ y)
+LOCATION:Marcellus Senior High School SHS Stadium Turf Field
+DESCRIPTION:Girls Varsity Soccer. Away game vs Marcellus Central High Schoo
+ l. Type: League.
+END:VEVENT
+BEGIN:VEVENT
+UID:arbiterlive-game-100206323@arbiterlive.com
+DTSTAMP:20260830T154150Z
+DTSTART:20261003T190000Z
+DTEND:20261003T210000Z
+SUMMARY:Girls Varsity Soccer: Westhill vs Skaneateles Central Schools (Home
+ )
+LOCATION:Westhill High School Stadium
+DESCRIPTION:Girls Varsity Soccer. Home game vs Skaneateles Central Schools.
+  Type: Non-League.
+END:VEVENT
+BEGIN:VEVENT
+UID:arbiterlive-game-100191777@arbiterlive.com
+DTSTAMP:20260830T154150Z
+DTSTART:20261006T223000Z
+DTEND:20261007T003000Z
+SUMMARY:Girls Varsity Soccer: Westhill vs Christian Brothers Academy-Syracu
+ se (Home)
+LOCATION:Westhill High School Stadium
+DESCRIPTION:Girls Varsity Soccer. Home game vs Christian Brothers Academy-S
+ yracuse. Type: League.
+END:VEVENT
+BEGIN:VEVENT
+UID:arbiterlive-game-100251995@arbiterlive.com
+DTSTAMP:20260830T154150Z
+DTSTART:20261008T230000Z
+DTEND:20261009T010000Z
+SUMMARY:Girls Varsity Soccer: Westhill @ Jamesville DeWitt High School (Awa
+ y)
+LOCATION:Jamesville DeWitt High School HS Stadium
+DESCRIPTION:Girls Varsity Soccer. Away game vs Jamesville DeWitt High Schoo
+ l. Type: League.
+END:VEVENT
+BEGIN:VEVENT
+UID:arbiterlive-game-100161885@arbiterlive.com
+DTSTAMP:20260830T154150Z
+DTSTART:20261010T160000Z
+DTEND:20261010T180000Z
+SUMMARY:Girls Varsity Soccer: Westhill vs Fayetteville-Manlius High School 
+ (Home)
+LOCATION:Westhill High School Stadium
+DESCRIPTION:Girls Varsity Soccer. Home game vs Fayetteville-Manlius High Sc
+ hool. Type: Non-League.
+END:VEVENT
+BEGIN:VEVENT
+UID:arbiterlive-game-101196798@arbiterlive.com
+DTSTAMP:20260830T154150Z
+DTSTART:20261016T220000Z
+DTEND:20261017T000000Z
+SUMMARY:Girls Varsity Soccer: Westhill vs Rome Free Academy (Home)
+LOCATION:Westhill High School Stadium
+DESCRIPTION:Girls Varsity Soccer. Home game vs Rome Free Academy. Type: Non
+ -League.
+END:VEVENT
+END:VCALENDAR

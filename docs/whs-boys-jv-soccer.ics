@@ -1,0 +1,169 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//WHS Soccer Schedule//update_schedule.py//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Westhill Boys JV Soccer
+X-WR-TIMEZONE:America/New_York
+BEGIN:VEVENT
+UID:arbiterlive-game-100487185@arbiterlive.com
+DTSTAMP:20260830T154150Z
+DTSTART:20260901T140000Z
+DTEND:20260901T160000Z
+SUMMARY:Boys JV Soccer: Westhill vs Nottingham High School - Blue (Home)
+LOCATION:Westhill High School Stadium
+DESCRIPTION:Boys JV Soccer. Home game vs Nottingham High School - Blue. Typ
+ e: League.
+END:VEVENT
+BEGIN:VEVENT
+UID:arbiterlive-game-100208007@arbiterlive.com
+DTSTAMP:20260830T154150Z
+DTSTART:20260903T200000Z
+DTEND:20260903T220000Z
+SUMMARY:Boys JV Soccer: Westhill vs Skaneateles Central Schools (Home)
+LOCATION:Westhill High School Stadium
+DESCRIPTION:Boys JV Soccer. Home game vs Skaneateles Central Schools. Type:
+  League.
+END:VEVENT
+BEGIN:VEVENT
+UID:arbiterlive-game-100476371@arbiterlive.com
+DTSTAMP:20260830T154150Z
+DTSTART:20260905T140000Z
+DTEND:20260905T160000Z
+SUMMARY:Boys JV Soccer: Westhill vs East Syracuse Minoa High School (Home)
+LOCATION:Westhill High School Stadium
+DESCRIPTION:Boys JV Soccer. Home game vs East Syracuse Minoa High School. T
+ ype: Non-League.
+END:VEVENT
+BEGIN:VEVENT
+UID:arbiterlive-game-100180125@arbiterlive.com
+DTSTAMP:20260830T154150Z
+DTSTART:20260908T210000Z
+DTEND:20260908T230000Z
+SUMMARY:Boys JV Soccer: Westhill @ Skaneateles Central Schools (Away)
+LOCATION:Skaneateles Central Schools Lower Waterman
+DESCRIPTION:Boys JV Soccer. Away game vs Skaneateles Central Schools. Type:
+  League.
+END:VEVENT
+BEGIN:VEVENT
+UID:arbiterlive-game-100193090@arbiterlive.com
+DTSTAMP:20260830T154150Z
+DTSTART:20260911T210000Z
+DTEND:20260911T230000Z
+SUMMARY:Boys JV Soccer: Westhill vs Chittenango Central High School (Home)
+LOCATION:Westhill High School Stadium
+DESCRIPTION:Boys JV Soccer. Home game vs Chittenango Central High School. T
+ ype: League.
+END:VEVENT
+BEGIN:VEVENT
+UID:arbiterlive-game-100191491@arbiterlive.com
+DTSTAMP:20260830T154150Z
+DTSTART:20260915T210000Z
+DTEND:20260915T230000Z
+SUMMARY:Boys JV Soccer: Westhill vs Cazenovia High School (Home)
+LOCATION:Westhill High School Stadium
+DESCRIPTION:Boys JV Soccer. Home game vs Cazenovia High School. Type: Leagu
+ e.
+END:VEVENT
+BEGIN:VEVENT
+UID:arbiterlive-game-100208058@arbiterlive.com
+DTSTAMP:20260830T154150Z
+DTSTART:20260917T210000Z
+DTEND:20260917T230000Z
+SUMMARY:Boys JV Soccer: Westhill @ Jamesville DeWitt High School (Away)
+LOCATION:Jamesville DeWitt High School HS Field #1
+DESCRIPTION:Boys JV Soccer. Away game vs Jamesville DeWitt High School. Typ
+ e: League.
+END:VEVENT
+BEGIN:VEVENT
+UID:arbiterlive-game-100950167@arbiterlive.com
+DTSTAMP:20260830T154150Z
+DTSTART:20260919T150000Z
+DTEND:20260919T170000Z
+SUMMARY:Boys JV Soccer: Westhill @ Christian Brothers Academy-Syracuse (Awa
+ y)
+LOCATION:Christian Brothers Academy-Syracuse Lower Field
+DESCRIPTION:Boys JV Soccer. Away game vs Christian Brothers Academy-Syracus
+ e. Type: League.
+END:VEVENT
+BEGIN:VEVENT
+UID:arbiterlive-game-100276948@arbiterlive.com
+DTSTAMP:20260830T154150Z
+DTSTART:20260921T230000Z
+DTEND:20260922T010000Z
+SUMMARY:Boys JV Soccer: Westhill @ Marcellus Central High School (Away)
+LOCATION:Marcellus Senior High School SHS Stadium Turf Field
+DESCRIPTION:Boys JV Soccer. Away game vs Marcellus Central High School. Typ
+ e: League.
+END:VEVENT
+BEGIN:VEVENT
+UID:arbiterlive-game-100191574@arbiterlive.com
+DTSTAMP:20260830T154150Z
+DTSTART:20260924T203000Z
+DTEND:20260924T223000Z
+SUMMARY:Boys JV Soccer: Westhill vs Fabius-Pompey Middle/High School (Home)
+LOCATION:Westhill High School Stadium
+DESCRIPTION:Boys JV Soccer. Home game vs Fabius-Pompey Middle/High School. 
+ Type: League.
+END:VEVENT
+BEGIN:VEVENT
+UID:arbiterlive-game-101193523@arbiterlive.com
+DTSTAMP:20260830T154150Z
+DTSTART:20260926T160000Z
+DTEND:20260926T180000Z
+SUMMARY:Boys JV Soccer: Westhill vs Auburn High School (Home)
+LOCATION:Westhill High School Stadium
+DESCRIPTION:Boys JV Soccer. Home game vs Auburn High School. Type: League.
+END:VEVENT
+BEGIN:VEVENT
+UID:arbiterlive-game-100191590@arbiterlive.com
+DTSTAMP:20260830T154150Z
+DTSTART:20260929T203000Z
+DTEND:20260929T223000Z
+SUMMARY:Boys JV Soccer: Westhill vs Mexico Central High School (Home)
+LOCATION:Westhill High School Stadium
+DESCRIPTION:Boys JV Soccer. Home game vs Mexico Central High School. Type: 
+ League.
+END:VEVENT
+BEGIN:VEVENT
+UID:arbiterlive-game-100251956@arbiterlive.com
+DTSTAMP:20260830T154150Z
+DTSTART:20261001T210000Z
+DTEND:20261001T230000Z
+SUMMARY:Boys JV Soccer: Westhill @ Phoenix Central School District (Away)
+LOCATION:Phoenix/ JCB High School JCB Turf Stadium
+DESCRIPTION:Boys JV Soccer. Away game vs Phoenix Central School District. T
+ ype: League.
+END:VEVENT
+BEGIN:VEVENT
+UID:arbiterlive-game-100181359@arbiterlive.com
+DTSTAMP:20260830T154150Z
+DTSTART:20261008T210000Z
+DTEND:20261008T230000Z
+SUMMARY:Boys JV Soccer: Westhill @ Cortland Enlarged City School District (
+ Away)
+LOCATION:Cortland Junior/Senior High School Stadium
+DESCRIPTION:Boys JV Soccer. Away game vs Cortland Enlarged City School Dist
+ rict. Type: League.
+END:VEVENT
+BEGIN:VEVENT
+UID:arbiterlive-game-100191613@arbiterlive.com
+DTSTAMP:20260830T154150Z
+DTSTART:20261013T203000Z
+DTEND:20261013T223000Z
+SUMMARY:Boys JV Soccer: Westhill vs Jamesville DeWitt High School (Home)
+LOCATION:Westhill High School Stadium
+DESCRIPTION:Boys JV Soccer. Home game vs Jamesville DeWitt High School. Typ
+ e: League.
+END:VEVENT
+BEGIN:VEVENT
+UID:arbiterlive-game-100191631@arbiterlive.com
+DTSTAMP:20260830T154150Z
+DTSTART:20261015T203000Z
+DTEND:20261015T223000Z
+SUMMARY:Boys JV Soccer: Westhill vs Marcellus Central High School (Home)
+LOCATION:Westhill High School Stadium
+DESCRIPTION:Boys JV Soccer. Home game vs Marcellus Central High School. Typ
+ e: League.
+END:VEVENT
+END:VCALENDAR

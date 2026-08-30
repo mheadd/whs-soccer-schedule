@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Westhill Boys Varsity Soccer Schedule</title>
+  <title>Westhill Soccer Schedules</title>
   <style>
     :root {
       --navy: #1b2a4a;
@@ -62,7 +62,19 @@
       margin-top: 0.5rem;
     }
     .btn:hover { background: #095b41; }
+    .btn-sm { padding: 0.5rem 1rem; font-size: 0.9rem; margin-top: 0; }
     ol { padding-left: 1.25rem; }
+    .teams { list-style: none; margin: 0; padding: 0; }
+    .teams li {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 0.75rem 0;
+      border-bottom: 1px solid #edeff2;
+    }
+    .teams li:last-child { border-bottom: none; }
+    .teams .team-name { font-weight: 600; }
     code {
       background: #eef0f3;
       padding: 0.15rem 0.4rem;
@@ -83,28 +95,54 @@
 <body>
   <header>
     <img class="logo" src="westhill-logo.jpg" alt="Westhill School District logo" />
-    <h1>Westhill Boys Varsity Soccer</h1>
-    <p>Season schedule — subscribe or import to your calendar</p>
+    <h1>Westhill Soccer Schedules</h1>
+    <p>Subscribe to your team — calendars stay up to date all season</p>
   </header>
 
   <main>
     <div class="card">
-      <h2>Add to your calendar</h2>
-      <p>Download the latest schedule as an <code>.ics</code> file:</p>
-      <a class="btn" href="whs-boys-varsity-soccer.ics" download>Download calendar (.ics)</a>
+      <h2>Choose your team</h2>
+      <p>Download a schedule as an <code>.ics</code> file, or copy its link to subscribe (see below).</p>
+      <ul class="teams">
+        <li>
+          <span class="team-name">Boys Varsity</span>
+          <a class="btn btn-sm" href="whs-boys-varsity-soccer.ics" download>Download</a>
+        </li>
+        <li>
+          <span class="team-name">Boys JV</span>
+          <a class="btn btn-sm" href="whs-boys-jv-soccer.ics" download>Download</a>
+        </li>
+        <li>
+          <span class="team-name">Boys 7th &amp; 8th Grade</span>
+          <a class="btn btn-sm" href="whs-boys-7-8-soccer.ics" download>Download</a>
+        </li>
+        <li>
+          <span class="team-name">Girls Varsity</span>
+          <a class="btn btn-sm" href="whs-girls-varsity-soccer.ics" download>Download</a>
+        </li>
+        <li>
+          <span class="team-name">Girls JV</span>
+          <a class="btn btn-sm" href="whs-girls-jv-soccer.ics" download>Download</a>
+        </li>
+        <li>
+          <span class="team-name">Girls 7th &amp; 8th Grade</span>
+          <a class="btn btn-sm" href="whs-girls-7-8-soccer.ics" download>Download</a>
+        </li>
+      </ul>
     </div>
 
     <div class="card">
       <h2>Subscribe (auto-updating)</h2>
       <p>
         To have your calendar refresh automatically as games change, subscribe to
-        the file's URL instead of importing it.
+        a team's file URL instead of importing it. Copy the team's <strong>Download</strong>
+        link above to get its <code>.ics</code> URL.
       </p>
       <p><strong>Google Calendar:</strong></p>
       <ol>
         <li>Open <a href="https://calendar.google.com" target="_blank" rel="noopener">Google Calendar</a>.</li>
         <li>Next to <em>Other calendars</em>, click <strong>+</strong> → <strong>From URL</strong>.</li>
-        <li>Paste this page's <code>.ics</code> URL and click <strong>Add calendar</strong>.</li>
+        <li>Paste the team's <code>.ics</code> URL and click <strong>Add calendar</strong>.</li>
       </ol>
       <p><strong>Apple Calendar:</strong> File → New Calendar Subscription, then paste the same URL.</p>
     </div>
@@ -112,7 +150,7 @@
     <div class="card">
       <h2>One-time import</h2>
       <ol>
-        <li>Download the <code>.ics</code> file above.</li>
+        <li>Download a team's <code>.ics</code> file above.</li>
         <li>In Google Calendar, go to <strong>Settings → Import &amp; export</strong>.</li>
         <li>Select the file, choose a calendar, and click <strong>Import</strong>.</li>
       </ol>

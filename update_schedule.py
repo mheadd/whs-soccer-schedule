@@ -1,15 +1,16 @@
 #!/usr/bin/env python3
-"""Fetch a high-school team schedule from ArbiterLive and export it to an .ics file.
+"""Fetch Westhill soccer schedules from ArbiterLive and export them to .ics files.
 
-Designed to be run periodically (e.g. from cron) throughout the season so that
-schedule changes are captured. Calendar events use the site's stable game IDs as
-their UIDs, so re-importing the generated .ics into Google Calendar updates the
-existing events instead of creating duplicates.
+Generates one calendar file per team so people can subscribe to whichever teams
+they care about. Designed to be run periodically (e.g. from cron) throughout the
+season so schedule changes are captured. Calendar events use the site's stable
+game IDs as their UIDs, so re-importing a file updates existing events instead of
+creating duplicates.
 
 Usage:
-    python update_schedule.py                # use built-in defaults
-    python update_schedule.py --url <URL>    # override the schedule URL
-    python update_schedule.py --quiet        # suppress the change summary
+    python update_schedule.py                    # all teams
+    python update_schedule.py --team boys-varsity  # one team (repeatable)
+    python update_schedule.py --quiet            # suppress the change summary
 
 Requires: requests, beautifulsoup4 (see requirements.txt).
 """
@@ -30,13 +31,64 @@ from bs4 import BeautifulSoup
 
 # --- Configuration -----------------------------------------------------------
 
-DEFAULT_URL = "https://www.arbiterlive.com/Teams/Schedule/5046751?activeEntityId=25499"
-DEFAULT_ICS = Path(__file__).with_name("whs-boys-varsity-soccer.ics")
-DEFAULT_SNAPSHOT = Path(__file__).with_name(".schedule-snapshot.json")
-# Copy served by GitHub Pages; committed and pushed after each run.
-DEFAULT_DOCS_ICS = Path(__file__).with_name("docs") / "whs-boys-varsity-soccer.ics"
 
-CALENDAR_NAME = "Westhill Boys Varsity Soccer"
+@dataclass(frozen=True)
+class Team:
+    slug: str  # CLI selector and snapshot key
+    name: str  # calendar (X-WR-CALNAME) name
+    label: str  # short prefix used in event summaries
+    url: str
+    ics_name: str  # output filename served by GitHub Pages
+
+
+TEAMS = [
+    Team(
+        slug="boys-varsity",
+        name="Westhill Boys Varsity Soccer",
+        label="Boys Varsity",
+        url="https://www.arbiterlive.com/Teams/Schedule/5046751?activeEntityId=25499",
+        ics_name="whs-boys-varsity-soccer.ics",
+    ),
+    Team(
+        slug="boys-jv",
+        name="Westhill Boys JV Soccer",
+        label="Boys JV",
+        url="https://www.arbiterlive.com/Teams/Schedule/5118052?activeEntityId=25499",
+        ics_name="whs-boys-jv-soccer.ics",
+    ),
+    Team(
+        slug="boys-7-8",
+        name="Westhill Boys 7th & 8th Grade Soccer",
+        label="Boys 7/8",
+        url="https://www.arbiterlive.com/Teams/Schedule/7674869?activeEntityId=25499",
+        ics_name="whs-boys-7-8-soccer.ics",
+    ),
+    Team(
+        slug="girls-varsity",
+        name="Westhill Girls Varsity Soccer",
+        label="Girls Varsity",
+        url="https://www.arbiterlive.com/Teams/Schedule/4535412?activeEntityId=25499",
+        ics_name="whs-girls-varsity-soccer.ics",
+    ),
+    Team(
+        slug="girls-jv",
+        name="Westhill Girls JV Soccer",
+        label="Girls JV",
+        url="https://www.arbiterlive.com/Teams/Schedule/7604162?activeEntityId=25499",
+        ics_name="whs-girls-jv-soccer.ics",
+    ),
+    Team(
+        slug="girls-7-8",
+        name="Westhill Girls 7th & 8th Grade Soccer",
+        label="Girls 7/8",
+        url="https://www.arbiterlive.com/Teams/Schedule/7674870?activeEntityId=25499",
+        ics_name="whs-girls-7-8-soccer.ics",
+    ),
+]
+
+DOCS_DIR = Path(__file__).with_name("docs")
+DEFAULT_SNAPSHOT = Path(__file__).with_name(".schedule-snapshot.json")
+
 LOCAL_TZ = ZoneInfo("America/New_York")
 UTC = ZoneInfo("UTC")
 DEFAULT_DURATION = timedelta(hours=2)
@@ -209,14 +261,14 @@ def _fold(line: str) -> str:
     return "\r\n".join(folded)
 
 
-def build_ics(games: list[Game], generated_at: datetime) -> str:
+def build_ics(team: Team, games: list[Game], generated_at: datetime) -> str:
     lines = [
         "BEGIN:VCALENDAR",
         "VERSION:2.0",
         "PRODID:-//WHS Soccer Schedule//update_schedule.py//EN",
         "CALSCALE:GREGORIAN",
         "METHOD:PUBLISH",
-        f"X-WR-CALNAME:{_ics_escape(CALENDAR_NAME)}",
+        f"X-WR-CALNAME:{_ics_escape(team.name)}",
         "X-WR-TIMEZONE:America/New_York",
     ]
     stamp = generated_at.astimezone(UTC).strftime("%Y%m%dT%H%M%SZ")
@@ -224,8 +276,8 @@ def build_ics(games: list[Game], generated_at: datetime) -> str:
     for game in games:
         side = "vs" if game.home else "@"
         home_away = "Home" if game.home else "Away"
-        summary = f"Soccer: Westhill {side} {game.opponent} ({home_away})"
-        description = f"Boys Varsity Soccer. {home_away} game vs {game.opponent}."
+        summary = f"{team.label} Soccer: Westhill {side} {game.opponent} ({home_away})"
+        description = f"{team.label} Soccer. {home_away} game vs {game.opponent}."
         if game.game_type:
             description += f" Type: {game.game_type}."
 
@@ -306,61 +358,73 @@ def _describe(game: dict) -> str:
 
 
 def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Export an ArbiterLive schedule to an .ics file.")
-    parser.add_argument("--url", default=DEFAULT_URL, help="Schedule page URL.")
-    parser.add_argument("--ics", type=Path, default=DEFAULT_ICS, help="Output .ics path.")
+    parser = argparse.ArgumentParser(description="Export Westhill soccer schedules to .ics files.")
     parser.add_argument(
-        "--docs-ics",
-        type=Path,
-        default=DEFAULT_DOCS_ICS,
-        help="Copy of the .ics served by GitHub Pages. Use 'none' to skip.",
+        "--team",
+        action="append",
+        choices=[team.slug for team in TEAMS],
+        metavar="SLUG",
+        help="Limit to specific team(s). Repeatable. Default: all teams.",
     )
+    parser.add_argument("--docs-dir", type=Path, default=DOCS_DIR, help="Directory for the generated .ics files.")
     parser.add_argument("--snapshot", type=Path, default=DEFAULT_SNAPSHOT, help="Change-tracking JSON path.")
     parser.add_argument("--quiet", action="store_true", help="Suppress the change summary.")
     return parser.parse_args(argv)
 
 
+def select_teams(slugs: list[str] | None) -> list[Team]:
+    if not slugs:
+        return list(TEAMS)
+    wanted = set(slugs)
+    return [team for team in TEAMS if team.slug in wanted]
+
+
 def main(argv: list[str] | None = None) -> int:
     args = parse_args(argv)
+    teams = select_teams(args.team)
 
-    try:
-        html = fetch_html(args.url)
-    except requests.RequestException as error:
-        print(f"Error fetching schedule: {error}", file=sys.stderr)
-        return 1
-
-    games = parse_games(html)
-    if not games:
-        print("No games found. The page layout may have changed.", file=sys.stderr)
-        return 1
-    resolve_years(games)
-
+    args.docs_dir.mkdir(parents=True, exist_ok=True)
     old_snapshot = load_snapshot(args.snapshot)
-    new_snapshot = snapshot_from_games(games)
+    new_snapshot: dict[str, dict] = dict(old_snapshot)  # preserve teams not run this time
+    generated_at = datetime.now(tz=UTC)
+    exit_code = 0
 
-    ics = build_ics(games, datetime.now(tz=UTC))
-    args.ics.write_text(ics, encoding="utf-8")
+    for team in teams:
+        try:
+            html = fetch_html(team.url)
+        except requests.RequestException as error:
+            print(f"[{team.slug}] Error fetching schedule: {error}", file=sys.stderr)
+            exit_code = 1
+            continue
+
+        games = parse_games(html)
+        if not games:
+            print(f"[{team.slug}] No games found. The page layout may have changed.", file=sys.stderr)
+            exit_code = 1
+            continue
+        resolve_years(games)
+
+        ics = build_ics(team, games, generated_at)
+        output_path = args.docs_dir / team.ics_name
+        output_path.write_text(ics, encoding="utf-8")
+
+        team_snapshot = snapshot_from_games(games)
+        previous = old_snapshot.get(team.slug, {})
+        new_snapshot[team.slug] = team_snapshot
+
+        if not args.quiet:
+            print(f"[{team.slug}] Wrote {len(games)} games to {output_path}")
+            changes = summarize_changes(previous, team_snapshot)
+            if not previous:
+                print(f"[{team.slug}] First run: no previous snapshot to compare against.")
+            elif changes:
+                print(f"[{team.slug}] Schedule changes since last run:")
+                print("\n".join(changes))
+            else:
+                print(f"[{team.slug}] No schedule changes since last run.")
+
     args.snapshot.write_text(json.dumps(new_snapshot, indent=2), encoding="utf-8")
-
-    docs_ics = args.docs_ics
-    if docs_ics is not None and str(docs_ics).lower() != "none":
-        docs_ics.parent.mkdir(parents=True, exist_ok=True)
-        docs_ics.write_text(ics, encoding="utf-8")
-
-    if not args.quiet:
-        print(f"Wrote {len(games)} games to {args.ics}")
-        if docs_ics is not None and str(docs_ics).lower() != "none":
-            print(f"Copied calendar to {docs_ics}")
-        changes = summarize_changes(old_snapshot, new_snapshot)
-        if not old_snapshot:
-            print("First run: no previous snapshot to compare against.")
-        elif changes:
-            print("Schedule changes since last run:")
-            print("\n".join(changes))
-        else:
-            print("No schedule changes since last run.")
-
-    return 0
+    return exit_code
 
 
 if __name__ == "__main__":

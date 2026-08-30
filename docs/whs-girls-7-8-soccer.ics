@@ -1,0 +1,142 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//WHS Soccer Schedule//update_schedule.py//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Westhill Girls 7th & 8th Grade Soccer
+X-WR-TIMEZONE:America/New_York
+BEGIN:VEVENT
+UID:arbiterlive-game-100754652@arbiterlive.com
+DTSTAMP:20260830T154150Z
+DTSTART:20260910T210000Z
+DTEND:20260910T230000Z
+SUMMARY:Girls 7/8 Soccer: Westhill vs Skaneateles Central Schools - Blue (H
+ ome)
+LOCATION:Onondaga Hill Middle School Onondaga Hill Middle School Soccer Fie
+ ld
+DESCRIPTION:Girls 7/8 Soccer. Home game vs Skaneateles Central Schools - Bl
+ ue. Type: League.
+END:VEVENT
+BEGIN:VEVENT
+UID:arbiterlive-game-100754659@arbiterlive.com
+DTSTAMP:20260830T154150Z
+DTSTART:20260914T203000Z
+DTEND:20260914T223000Z
+SUMMARY:Girls 7/8 Soccer: Westhill vs Christian Brothers Academy-Syracuse (
+ Home)
+LOCATION:Onondaga Hill Middle School Onondaga Hill Middle School Soccer Fie
+ ld
+DESCRIPTION:Girls 7/8 Soccer. Home game vs Christian Brothers Academy-Syrac
+ use. Type: League.
+END:VEVENT
+BEGIN:VEVENT
+UID:arbiterlive-game-100754666@arbiterlive.com
+DTSTAMP:20260830T154150Z
+DTSTART:20260918T203000Z
+DTEND:20260918T223000Z
+SUMMARY:Girls 7/8 Soccer: Westhill vs Cazenovia High School (Home)
+LOCATION:Onondaga Hill Middle School Onondaga Hill Middle School Soccer Fie
+ ld
+DESCRIPTION:Girls 7/8 Soccer. Home game vs Cazenovia High School. Type: Lea
+ gue.
+END:VEVENT
+BEGIN:VEVENT
+UID:arbiterlive-game-100754670@arbiterlive.com
+DTSTAMP:20260830T154150Z
+DTSTART:20260922T203000Z
+DTEND:20260922T223000Z
+SUMMARY:Girls 7/8 Soccer: Westhill vs Skaneateles Central Schools - Gold (H
+ ome)
+LOCATION:Onondaga Hill Middle School Onondaga Hill Middle School Soccer Fie
+ ld
+DESCRIPTION:Girls 7/8 Soccer. Home game vs Skaneateles Central Schools - Go
+ ld. Type: League.
+END:VEVENT
+BEGIN:VEVENT
+UID:arbiterlive-game-102574072@arbiterlive.com
+DTSTAMP:20260830T154150Z
+DTSTART:20260923T203000Z
+DTEND:20260923T223000Z
+SUMMARY:Girls 7/8 Soccer: Westhill @ Homer Central School District  - Socce
+ r - Girls 7/8th (Away)
+LOCATION:Homer Junior High School Homer Junior High School
+DESCRIPTION:Girls 7/8 Soccer. Away game vs Homer Central School District  -
+  Soccer - Girls 7/8th. Type: League.
+END:VEVENT
+BEGIN:VEVENT
+UID:arbiterlive-game-100912215@arbiterlive.com
+DTSTAMP:20260830T154150Z
+DTSTART:20260924T203000Z
+DTEND:20260924T223000Z
+SUMMARY:Girls 7/8 Soccer: Westhill @ Marcellus Central High School (Away)
+LOCATION:Marcellus Driver Middle School DMS Pit Field
+DESCRIPTION:Girls 7/8 Soccer. Away game vs Marcellus Central High School. T
+ ype: League.
+END:VEVENT
+BEGIN:VEVENT
+UID:arbiterlive-game-100935725@arbiterlive.com
+DTSTAMP:20260830T154150Z
+DTSTART:20260930T203000Z
+DTEND:20260930T223000Z
+SUMMARY:Girls 7/8 Soccer: Westhill @ Jamesville DeWitt High School - Red (A
+ way)
+LOCATION:Jamesville-Dewitt Middle School MS Game Soccer Field
+DESCRIPTION:Girls 7/8 Soccer. Away game vs Jamesville DeWitt High School - 
+ Red. Type: League.
+END:VEVENT
+BEGIN:VEVENT
+UID:arbiterlive-game-103039454@arbiterlive.com
+DTSTAMP:20260830T154150Z
+DTSTART:20261001T210000Z
+DTEND:20261001T230000Z
+SUMMARY:Girls 7/8 Soccer: Westhill vs Mexico Central High School (Home)
+LOCATION:Onondaga Hill Middle School Onondaga Hill Middle School Soccer Fie
+ ld
+DESCRIPTION:Girls 7/8 Soccer. Home game vs Mexico Central High School. Type
+ : League.
+END:VEVENT
+BEGIN:VEVENT
+UID:arbiterlive-game-100734815@arbiterlive.com
+DTSTAMP:20260830T154150Z
+DTSTART:20261006T203000Z
+DTEND:20261006T223000Z
+SUMMARY:Girls 7/8 Soccer: Westhill @ Skaneateles Central Schools - Blue (Aw
+ ay)
+LOCATION:Skaneateles Central Schools Austin Park Terrace Field
+DESCRIPTION:Girls 7/8 Soccer. Away game vs Skaneateles Central Schools - Bl
+ ue. Type: League.
+END:VEVENT
+BEGIN:VEVENT
+UID:arbiterlive-game-101989195@arbiterlive.com
+DTSTAMP:20260830T154150Z
+DTSTART:20261008T220000Z
+DTEND:20261009T000000Z
+SUMMARY:Girls 7/8 Soccer: Westhill @ Christian Brothers Academy-Syracuse (A
+ way)
+LOCATION:Christian Brothers Academy-Syracuse Lower Field
+DESCRIPTION:Girls 7/8 Soccer. Away game vs Christian Brothers Academy-Syrac
+ use. Type: League.
+END:VEVENT
+BEGIN:VEVENT
+UID:arbiterlive-game-100754672@arbiterlive.com
+DTSTAMP:20260830T154150Z
+DTSTART:20261013T203000Z
+DTEND:20261013T223000Z
+SUMMARY:Girls 7/8 Soccer: Westhill vs Homer Central School District  - Socc
+ er - Girls 7/8th (Home)
+LOCATION:Onondaga Hill Middle School Onondaga Hill Middle School Soccer Fie
+ ld
+DESCRIPTION:Girls 7/8 Soccer. Home game vs Homer Central School District  -
+  Soccer - Girls 7/8th. Type: League.
+END:VEVENT
+BEGIN:VEVENT
+UID:arbiterlive-game-101989260@arbiterlive.com
+DTSTAMP:20260830T154150Z
+DTSTART:20261016T203000Z
+DTEND:20261016T223000Z
+SUMMARY:Girls 7/8 Soccer: Westhill @ Cazenovia High School (Away)
+LOCATION:Fenner Athletic Field Fenner Field #1
+DESCRIPTION:Girls 7/8 Soccer. Away game vs Cazenovia High School. Type: Lea
+ gue.
+END:VEVENT
+END:VCALENDAR
