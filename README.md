@@ -142,7 +142,29 @@ git push
 The script prints a per-team summary of any games that changed, so you can see
 what was updated before pushing.
 
-## Running periodically
+## Automated updates with GitHub Actions
+
+The repository includes a workflow at
+[`.github/workflows/update-schedules.yml`](.github/workflows/update-schedules.yml)
+that runs the script on a schedule and pushes changes for you — no local cron
+needed.
+
+- **When it runs:** daily at 11:00 UTC (~6–7 AM Eastern), plus on demand via the
+  **Actions** tab (**Run workflow**). Change the `cron:` line to adjust.
+- **What it does:** installs dependencies, runs `update_schedule.py --quiet`, and
+  commits `docs/*.ics` **only when a schedule actually changed**. Pushing to
+  `main` redeploys GitHub Pages automatically.
+- **Permissions:** the workflow requests only `contents: write`, and the commit
+  message includes `[skip ci]` to avoid needless re-runs.
+
+Because the generated files ignore the `DTSTAMP` timestamp when deciding whether
+to rewrite, an unchanged schedule produces no commit.
+
+> **Note:** GitHub disables scheduled workflows in a repository after ~60 days of
+> no activity in the repo. Pushing occasionally (or running it manually) keeps it
+> active.
+
+## Running periodically (local cron)
 
 To refresh the schedules automatically (for example, every Monday at 6 AM), add a
 cron entry with `crontab -e`:

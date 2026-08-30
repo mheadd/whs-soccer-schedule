@@ -306,6 +306,25 @@ def build_ics(team: Team, games: list[Game], generated_at: datetime) -> str:
     return "\r\n".join(_fold(line) for line in lines) + "\r\n"
 
 
+def _without_dtstamp(ics_text: str) -> str:
+    return "\n".join(
+        line for line in ics_text.splitlines() if not line.startswith("DTSTAMP:")
+    )
+
+
+def write_if_changed(path: Path, ics_text: str) -> bool:
+    """Write the calendar only if it differs (ignoring the DTSTAMP timestamps).
+
+    DTSTAMP is regenerated on every run, so comparing without it keeps unchanged
+    schedules from producing spurious file writes (and, in CI, empty commits).
+    Returns True if the file was written.
+    """
+    if path.exists() and _without_dtstamp(path.read_text(encoding="utf-8")) == _without_dtstamp(ics_text):
+        return False
+    path.write_text(ics_text, encoding="utf-8")
+    return True
+
+
 # --- Change detection --------------------------------------------------------
 
 
@@ -406,14 +425,15 @@ def main(argv: list[str] | None = None) -> int:
 
         ics = build_ics(team, games, generated_at)
         output_path = args.docs_dir / team.ics_name
-        output_path.write_text(ics, encoding="utf-8")
+        written = write_if_changed(output_path, ics)
 
         team_snapshot = snapshot_from_games(games)
         previous = old_snapshot.get(team.slug, {})
         new_snapshot[team.slug] = team_snapshot
 
         if not args.quiet:
-            print(f"[{team.slug}] Wrote {len(games)} games to {output_path}")
+            action = "Wrote" if written else "Unchanged:"
+            print(f"[{team.slug}] {action} {len(games)} games ({output_path})")
             changes = summarize_changes(previous, team_snapshot)
             if not previous:
                 print(f"[{team.slug}] First run: no previous snapshot to compare against.")
