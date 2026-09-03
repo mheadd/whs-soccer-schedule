@@ -7,7 +7,7 @@ X-WR-CALNAME:Westhill Boys Varsity Soccer
 X-WR-TIMEZONE:America/New_York
 BEGIN:VEVENT
 UID:arbiterlive-game-103009279@arbiterlive.com
-DTSTAMP:20260830T154150Z
+DTSTAMP:20260903T145559Z
 DTSTART:20260831T210000Z
 DTEND:20260831T230000Z
 SUMMARY:Boys Varsity Soccer: Westhill vs Liverpool High School (Home)
@@ -17,7 +17,7 @@ DESCRIPTION:Boys Varsity Soccer. Home game vs Liverpool High School. Type:
 END:VEVENT
 BEGIN:VEVENT
 UID:arbiterlive-game-102679349@arbiterlive.com
-DTSTAMP:20260830T154150Z
+DTSTAMP:20260903T145559Z
 DTSTART:20260902T220000Z
 DTEND:20260903T000000Z
 SUMMARY:Boys Varsity Soccer: Westhill vs Whitesboro High School (Home)
@@ -27,7 +27,7 @@ DESCRIPTION:Boys Varsity Soccer. Home game vs Whitesboro High School. Type:
 END:VEVENT
 BEGIN:VEVENT
 UID:arbiterlive-game-102741559@arbiterlive.com
-DTSTAMP:20260830T154150Z
+DTSTAMP:20260903T145559Z
 DTSTART:20260903T220000Z
 DTEND:20260904T000000Z
 SUMMARY:Boys Varsity Soccer: Westhill @ Oneida City School District (Away)
@@ -37,7 +37,7 @@ DESCRIPTION:Boys Varsity Soccer. Away game vs Oneida City School District.
 END:VEVENT
 BEGIN:VEVENT
 UID:arbiterlive-game-100476318@arbiterlive.com
-DTSTAMP:20260830T154150Z
+DTSTAMP:20260903T145559Z
 DTSTART:20260905T160000Z
 DTEND:20260905T180000Z
 SUMMARY:Boys Varsity Soccer: Westhill vs East Syracuse Minoa High School (H
@@ -48,7 +48,7 @@ DESCRIPTION:Boys Varsity Soccer. Home game vs East Syracuse Minoa High Scho
 END:VEVENT
 BEGIN:VEVENT
 UID:arbiterlive-game-100178356@arbiterlive.com
-DTSTAMP:20260830T154150Z
+DTSTAMP:20260903T145559Z
 DTSTART:20260908T223000Z
 DTEND:20260909T003000Z
 SUMMARY:Boys Varsity Soccer: Westhill @ Skaneateles Central Schools (Away)
@@ -58,7 +58,7 @@ DESCRIPTION:Boys Varsity Soccer. Away game vs Skaneateles Central Schools.
 END:VEVENT
 BEGIN:VEVENT
 UID:arbiterlive-game-101372872@arbiterlive.com
-DTSTAMP:20260830T154150Z
+DTSTAMP:20260903T145559Z
 DTSTART:20260911T203000Z
 DTEND:20260911T223000Z
 SUMMARY:Boys Varsity Soccer: Westhill @ New Hartford High School (Away)
@@ -68,7 +68,7 @@ DESCRIPTION:Boys Varsity Soccer. Away game vs New Hartford High School. Typ
 END:VEVENT
 BEGIN:VEVENT
 UID:arbiterlive-game-100190751@arbiterlive.com
-DTSTAMP:20260830T154150Z
+DTSTAMP:20260903T145559Z
 DTSTART:20260915T230000Z
 DTEND:20260916T010000Z
 SUMMARY:Boys Varsity Soccer: Westhill vs Cazenovia High School (Home)
@@ -78,7 +78,7 @@ DESCRIPTION:Boys Varsity Soccer. Home game vs Cazenovia High School. Type:
 END:VEVENT
 BEGIN:VEVENT
 UID:arbiterlive-game-100207267@arbiterlive.com
-DTSTAMP:20260830T154150Z
+DTSTAMP:20260903T145559Z
 DTSTART:20260917T210000Z
 DTEND:20260917T230000Z
 SUMMARY:Boys Varsity Soccer: Westhill @ Jamesville DeWitt High School (Away
@@ -89,7 +89,7 @@ DESCRIPTION:Boys Varsity Soccer. Away game vs Jamesville DeWitt High School
 END:VEVENT
 BEGIN:VEVENT
 UID:arbiterlive-game-100950158@arbiterlive.com
-DTSTAMP:20260830T154150Z
+DTSTAMP:20260903T145559Z
 DTSTART:20260919T180000Z
 DTEND:20260919T200000Z
 SUMMARY:Boys Varsity Soccer: Westhill @ Christian Brothers Academy-Syracuse
@@ -100,7 +100,7 @@ DESCRIPTION:Boys Varsity Soccer. Away game vs Christian Brothers Academy-Sy
 END:VEVENT
 BEGIN:VEVENT
 UID:arbiterlive-game-100411526@arbiterlive.com
-DTSTAMP:20260830T154150Z
+DTSTAMP:20260903T145559Z
 DTSTART:20260922T230000Z
 DTEND:20260923T010000Z
 SUMMARY:Boys Varsity Soccer: Westhill @ Bishop Ludden-GrimesHigh School (Aw
@@ -111,7 +111,7 @@ DESCRIPTION:Boys Varsity Soccer. Away game vs Bishop Ludden-GrimesHigh Scho
 END:VEVENT
 BEGIN:VEVENT
 UID:arbiterlive-game-102161207@arbiterlive.com
-DTSTAMP:20260830T154150Z
+DTSTAMP:20260903T145559Z
 DTSTART:20260926T180000Z
 DTEND:20260926T200000Z
 SUMMARY:Boys Varsity Soccer: Westhill vs Bishop Ludden-GrimesHigh School (H
@@ -122,9 +122,9 @@ DESCRIPTION:Boys Varsity Soccer. Home game vs Bishop Ludden-GrimesHigh Scho
 END:VEVENT
 BEGIN:VEVENT
 UID:arbiterlive-game-100190757@arbiterlive.com
-DTSTAMP:20260830T154150Z
-DTSTART:20260929T223000Z
-DTEND:20260930T003000Z
+DTSTAMP:20260903T145559Z
+DTSTART:20260929T220000Z
+DTEND:20260930T000000Z
 SUMMARY:Boys Varsity Soccer: Westhill vs Skaneateles Central Schools (Home)
 LOCATION:Westhill High School Westhill High School
 DESCRIPTION:Boys Varsity Soccer. Home game vs Skaneateles Central Schools. 
@@ -132,7 +132,7 @@ DESCRIPTION:Boys Varsity Soccer. Home game vs Skaneateles Central Schools.
 END:VEVENT
 BEGIN:VEVENT
 UID:arbiterlive-game-100206267@arbiterlive.com
-DTSTAMP:20260830T154150Z
+DTSTAMP:20260903T145559Z
 DTSTART:20261006T220000Z
 DTEND:20261007T000000Z
 SUMMARY:Boys Varsity Soccer: Westhill @ Cazenovia High School (Away)
@@ -142,7 +142,7 @@ DESCRIPTION:Boys Varsity Soccer. Away game vs Cazenovia High School. Type:
 END:VEVENT
 BEGIN:VEVENT
 UID:arbiterlive-game-100191115@arbiterlive.com
-DTSTAMP:20260830T154150Z
+DTSTAMP:20260903T145559Z
 DTSTART:20261008T220000Z
 DTEND:20261009T000000Z
 SUMMARY:Boys Varsity Soccer: Westhill vs Jamesville DeWitt High School (Hom
@@ -153,7 +153,7 @@ DESCRIPTION:Boys Varsity Soccer. Home game vs Jamesville DeWitt High School
 END:VEVENT
 BEGIN:VEVENT
 UID:arbiterlive-game-100191123@arbiterlive.com
-DTSTAMP:20260830T154150Z
+DTSTAMP:20260903T145559Z
 DTSTART:20261013T223000Z
 DTEND:20261014T003000Z
 SUMMARY:Boys Varsity Soccer: Westhill vs Christian Brothers Academy-Syracus
@@ -164,7 +164,7 @@ DESCRIPTION:Boys Varsity Soccer. Home game vs Christian Brothers Academy-Sy
 END:VEVENT
 BEGIN:VEVENT
 UID:arbiterlive-game-100191184@arbiterlive.com
-DTSTAMP:20260830T154150Z
+DTSTAMP:20260903T145559Z
 DTSTART:20261015T223000Z
 DTEND:20261016T003000Z
 SUMMARY:Boys Varsity Soccer: Westhill vs Marcellus Central High School (Hom
