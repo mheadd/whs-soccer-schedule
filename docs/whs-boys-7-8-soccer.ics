@@ -7,7 +7,7 @@ X-WR-CALNAME:Westhill Boys 7th & 8th Grade Soccer
 X-WR-TIMEZONE:America/New_York
 BEGIN:VEVENT
 UID:arbiterlive-game-100754579@arbiterlive.com
-DTSTAMP:20260830T154150Z
+DTSTAMP:20260911T145632Z
 DTSTART:20260910T210000Z
 DTEND:20260910T230000Z
 SUMMARY:Boys 7/8 Soccer: Westhill vs Marcellus Central High School (Home)
@@ -18,7 +18,7 @@ DESCRIPTION:Boys 7/8 Soccer. Home game vs Marcellus Central High School. Ty
 END:VEVENT
 BEGIN:VEVENT
 UID:arbiterlive-game-100937643@arbiterlive.com
-DTSTAMP:20260830T154150Z
+DTSTAMP:20260911T145632Z
 DTSTART:20260914T203000Z
 DTEND:20260914T223000Z
 SUMMARY:Boys 7/8 Soccer: Westhill @ Jamesville DeWitt High School - White (
@@ -29,9 +29,9 @@ DESCRIPTION:Boys 7/8 Soccer. Away game vs Jamesville DeWitt High School - W
 END:VEVENT
 BEGIN:VEVENT
 UID:arbiterlive-game-100734066@arbiterlive.com
-DTSTAMP:20260830T154150Z
-DTSTART:20260916T210000Z
-DTEND:20260916T230000Z
+DTSTAMP:20260911T145632Z
+DTSTART:20260917T210000Z
+DTEND:20260917T230000Z
 SUMMARY:Boys 7/8 Soccer: Westhill @ Skaneateles Central Schools - Gold (Awa
  y)
 LOCATION:Skaneateles Central Schools Austin Park North Soccer Field
@@ -40,7 +40,7 @@ DESCRIPTION:Boys 7/8 Soccer. Away game vs Skaneateles Central Schools - Gol
 END:VEVENT
 BEGIN:VEVENT
 UID:arbiterlive-game-100754582@arbiterlive.com
-DTSTAMP:20260830T154150Z
+DTSTAMP:20260911T145632Z
 DTSTART:20260921T203000Z
 DTEND:20260921T223000Z
 SUMMARY:Boys 7/8 Soccer: Westhill vs Cazenovia High School (Home)
@@ -51,7 +51,7 @@ DESCRIPTION:Boys 7/8 Soccer. Home game vs Cazenovia High School. Type: Leag
 END:VEVENT
 BEGIN:VEVENT
 UID:arbiterlive-game-100754583@arbiterlive.com
-DTSTAMP:20260830T154150Z
+DTSTAMP:20260911T145632Z
 DTSTART:20260928T210000Z
 DTEND:20260928T230000Z
 SUMMARY:Boys 7/8 Soccer: Westhill vs Cortland Enlarged City School District
@@ -63,7 +63,7 @@ DESCRIPTION:Boys 7/8 Soccer. Home game vs Cortland Enlarged City School Dis
 END:VEVENT
 BEGIN:VEVENT
 UID:arbiterlive-game-100937527@arbiterlive.com
-DTSTAMP:20260830T154150Z
+DTSTAMP:20260911T145632Z
 DTSTART:20261001T203000Z
 DTEND:20261001T223000Z
 SUMMARY:Boys 7/8 Soccer: Westhill @ Jamesville DeWitt High School - Red (Aw
@@ -74,7 +74,7 @@ DESCRIPTION:Boys 7/8 Soccer. Away game vs Jamesville DeWitt High School - R
 END:VEVENT
 BEGIN:VEVENT
 UID:arbiterlive-game-100754594@arbiterlive.com
-DTSTAMP:20260830T154150Z
+DTSTAMP:20260911T145632Z
 DTSTART:20261005T203000Z
 DTEND:20261005T223000Z
 SUMMARY:Boys 7/8 Soccer: Westhill vs Skaneateles Central Schools - Blue (Ho
@@ -86,7 +86,7 @@ DESCRIPTION:Boys 7/8 Soccer. Home game vs Skaneateles Central Schools - Blu
 END:VEVENT
 BEGIN:VEVENT
 UID:arbiterlive-game-100754604@arbiterlive.com
-DTSTAMP:20260830T154150Z
+DTSTAMP:20260911T145632Z
 DTSTART:20261007T203000Z
 DTEND:20261007T223000Z
 SUMMARY:Boys 7/8 Soccer: Westhill vs Homer Central School District (Home)
@@ -97,7 +97,7 @@ DESCRIPTION:Boys 7/8 Soccer. Home game vs Homer Central School District. Ty
 END:VEVENT
 BEGIN:VEVENT
 UID:arbiterlive-game-100911357@arbiterlive.com
-DTSTAMP:20260830T154150Z
+DTSTAMP:20260911T145632Z
 DTSTART:20261013T203000Z
 DTEND:20261013T223000Z
 SUMMARY:Boys 7/8 Soccer: Westhill @ Marcellus Central High School (Away)
@@ -107,7 +107,7 @@ DESCRIPTION:Boys 7/8 Soccer. Away game vs Marcellus Central High School. Ty
 END:VEVENT
 BEGIN:VEVENT
 UID:arbiterlive-game-100754621@arbiterlive.com
-DTSTAMP:20260830T154150Z
+DTSTAMP:20260911T145632Z
 DTSTART:20261015T210000Z
 DTEND:20261015T230000Z
 SUMMARY:Boys 7/8 Soccer: Westhill vs Jamesville DeWitt High School - White 
@@ -119,7 +119,7 @@ DESCRIPTION:Boys 7/8 Soccer. Home game vs Jamesville DeWitt High School - W
 END:VEVENT
 BEGIN:VEVENT
 UID:arbiterlive-game-100754627@arbiterlive.com
-DTSTAMP:20260830T154150Z
+DTSTAMP:20260911T145632Z
 DTSTART:20261019T203000Z
 DTEND:20261019T223000Z
 SUMMARY:Boys 7/8 Soccer: Westhill vs Skaneateles Central Schools - Gold (Ho
